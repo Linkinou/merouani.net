@@ -1,21 +1,22 @@
 caddy:
-    image: phusion/baseimage
+    build: ./caddy
     volumes_from:
         - portfolio
     volumes:
         - ./caddy:/caddy
-    command: ./caddy/caddy -conf="/caddy/Caddyfile"
     ports:
         - 8078:8078
     links:
         - phpfpm
 
-portfolio:
-    image: phusion/baseimage
-    volumes:
-        - ./portfolio:/srv/portfolio
-
 phpfpm:
     image: php:7.0-fpm
     expose:
         - "9000"
+    volumes_from:
+        - portfolio
+
+portfolio:
+    image: phusion/baseimage
+    volumes:
+        - ./portfolio:/var/www/html/portfolio

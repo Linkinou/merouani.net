@@ -1,5 +1,5 @@
 http://merouani.net http://cedric.merouani.net localhost:8078 {
-    root /srv/portfolio
+    root /var/www/html/portfolio
     log /caddy/portfolio_access.log
     errors {
         log /caddy/portfolio_errors.log {
@@ -9,8 +9,8 @@ http://merouani.net http://cedric.merouani.net localhost:8078 {
         }
         404 404.html # Not Found
     }
-    fastcgi /srv/portfolio phpfpm:9000 php {
-        ext .php
-        index index.php index.html
+    fastcgi / phpfpm:9000 php
+    rewrite {
+        to {path} {path}/ /index.php?url={uri}
     }
 }
