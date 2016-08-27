@@ -19,4 +19,4 @@ phpfpm:
 portfolio:
     image: phusion/baseimage
     volumes:
-        - ./portfolio:/var/www/html/portfolio
+        - ./portfolio:/var/www/html/portfolio/

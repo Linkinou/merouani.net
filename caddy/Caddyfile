@@ -1,5 +1,5 @@
 http://merouani.net http://cedric.merouani.net localhost:8078 {
-    root /var/www/html/portfolio
+    root /var/www/html/portfolio/web
     log /caddy/portfolio_access.log
     errors {
         log /caddy/portfolio_errors.log {
