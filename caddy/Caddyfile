@@ -1,4 +1,4 @@
-http://merouani.net http://cedric.merouani.net localhost:8078 {
+http://merouani.net http://cedric.merouani.net localhost:8042 {
     root /var/www/html/portfolio/web
     log /caddy/portfolio_access.log
     errors {

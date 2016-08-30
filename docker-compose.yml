@@ -5,7 +5,7 @@ caddy:
     volumes:
         - ./caddy:/caddy
     ports:
-        - 8078:8078
+        - 8042:8042
     links:
         - phpfpm
 

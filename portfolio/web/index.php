@@ -13,13 +13,10 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 /** Definitions */
 $app['debug'] = true;
 /** Routes */
-$app->get('/hello/{name}', function (Request $request, $name) use ($app) {
-
+$app->get('/', function (Request $request) use ($app) {
     $app['asset_path'] = $request->getBasePath() . '/assets/';
 
-    return $app['twig']->render('index.twig', array(
-        'name' => $name,
-    ));
+    return $app['twig']->render('main/index.twig', []);
 });
 
 $app->run();

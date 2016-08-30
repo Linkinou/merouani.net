@@ -1,2 +1,4 @@
 # Created by .ignore support plugin (hsz.mobi)
 .idea
+caddy/portfolio_access.log
+caddy/portfolio_errors.log
