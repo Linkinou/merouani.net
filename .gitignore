@@ -3,3 +3,4 @@
 caddy/portfolio_access.log
 caddy/portfolio_errors.log
 portfolio/vendor
+portfolio/composer.lock
