@@ -1,0 +1,10 @@
+.idea
+caddy/portfolio_access.log
+caddy/portfolio_errors.log
+portfolio/vendor
+portfolio/composer.lock
+portfolio/web/css
+portfolio/web/js
+portfolio/web/img
+portfolio/web/fonts
+portfolio/node_modules

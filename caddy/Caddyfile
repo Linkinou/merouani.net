@@ -1,0 +1,16 @@
+http://merouani.net http://cedric.merouani.net localhost:8042 {
+    root /var/www/html/portfolio/web
+    log /caddy/portfolio_access.log
+    errors {
+        log /caddy/portfolio_errors.log {
+            size 50 # Rotate after 50 MB
+            age  30 # Keep rotated files for 30 days
+            keep 5  # Keep at most 5 log files
+        }
+        404 404.html # Not Found
+    }
+    fastcgi / phpfpm:9000 php
+    rewrite {
+        to {path} {path}/ /index.php?url={uri}
+    }
+}

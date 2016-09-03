@@ -1,0 +1,234 @@
+{% extends 'base.twig' %}
+
+{% block title %}Mon portfolio lol{% endblock %}
+
+{% block body %}
+    <!-- Site Main -->
+    <main class="site-main">
+        <article>
+            <!-- Page Header -->
+            <header class="page-header">
+                <div class="wrapper">
+                    <h1>{{ 'hello'|trans }}, I’m John Doe</h1>
+                    <h2>I’m Interactive Art Director currently working at Apple</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor congue aliquam. Vivamus non libero tellus. Praesent vestibulum mauris quis mi aliquam, vitae sodales justo blandit.</p>
+                </div>
+            </header>
+            <!-- Page Header End -->
+
+            <!-- Page Content -->
+            <div class="wrapper">
+                <!-- Projects Filter -->
+                <div class="widget-filter-top o-masonry">
+                    <ul>
+                        <li class="active"><a href="#" data-filter="*">All Works</a></li>
+                        <li><a href="#" data-filter=".illustration">Illustration</a></li>
+                        <li><a href="#" data-filter=".graphic">Graphic Design</a></li>
+                        <li><a href="#" data-filter=".art">Art Direction</a></li>
+                        <li><a href="#" data-filter=".logo">Logo Design</a></li>
+                        <li><a href="#" data-filter=".corporate">Corporate Identity</a></li>
+                    </ul>
+                </div>
+                <!-- Projects Filter End -->
+
+                <!-- Projects List -->
+                <div class="widget-projects o-grid">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-12 isotope-item illustration graphic">
+                            <article class="projects-item">
+                                <div class="item-photo">
+                                    <a href="works-single-1-full.html"><img src="{{ app.asset_path }}img/photo-work-1.jpg" alt="Project Name"></a>
+                                </div>
+                                <div class="item-info">
+                                    <h4><a href="works-single-1-full.html">Playing With Number</a></h4>
+                                    <p>
+                                        <a href="#">Illustration</a>
+                                        <span>,</span>
+                                        <a href="#">Graphic Design</a>
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 isotope-item graphic art">
+                            <article class="projects-item">
+                                <div class="item-photo">
+                                    <a href="works-single-1-full.html"><img src="{{ app.asset_path }}img/photo-work-2.jpg" alt="Project Name"></a>
+                                </div>
+                                <div class="item-info">
+                                    <h4><a href="works-single-1-full.html">A Very Big Fire</a></h4>
+                                    <p>
+                                        <a href="#">Graphic Design</a>
+                                        <span>,</span>
+                                        <a href="works-single-1-full.html">Art Direction</a>
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 isotope-item art logo">
+                            <article class="projects-item">
+                                <div class="item-photo">
+                                    <a href="works-single-1-full.html"><img src="{{ app.asset_path }}img/photo-work-3.jpg" alt="Project Name"></a>
+                                </div>
+                                <div class="item-info">
+                                    <h4><a href="works-single-1-full.html">My House Logo</a></h4>
+                                    <p>
+                                        <a href="#">Art Direction</a>
+                                        <span>,</span>
+                                        <a href="#">Logo Design</a>
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 isotope-item logo corporate">
+                            <article class="projects-item">
+                                <div class="item-photo">
+                                    <a href="works-single-1-full.html"><img src="{{ app.asset_path }}img/photo-work-4.jpg" alt="Project Name"></a>
+                                </div>
+                                <div class="item-info">
+                                    <h4><a href="works-single-1-full.html">Persona Corporate Identity</a></h4>
+                                    <p>
+                                        <a href="#">Logo Design</a>
+                                        <span>,</span>
+                                        <a href="#">Corporate Identity</a>
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 isotope-item corporate illustration">
+                            <article class="projects-item">
+                                <div class="item-photo">
+                                    <a href="works-single-1-full.html"><img src="{{ app.asset_path }}img/photo-work-5.jpg" alt="Project Name"></a>
+                                </div>
+                                <div class="item-info">
+                                    <h4><a href="works-single-1-full.html">Company Style Pack</a></h4>
+                                    <p>
+                                        <a href="#">Corporate Identity</a>
+                                        <span>,</span>
+                                        <a href="#">Illustration</a>
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 isotope-item illustration graphic">
+                            <article class="projects-item">
+                                <div class="item-photo">
+                                    <a href="works-single-1-full.html"><img src="{{ app.asset_path }}img/photo-work-6.jpg" alt="Project Name"></a>
+                                </div>
+                                <div class="item-info">
+                                    <h4><a href="works-single-1-full.html">Macbeth Poster Design</a></h4>
+                                    <p>
+                                        <a href="#">Illustration</a>
+                                        <span>,</span>
+                                        <a href="#">Graphic Design</a>
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 isotope-item graphic art">
+                            <article class="projects-item">
+                                <div class="item-photo">
+                                    <a href="works-single-1-full.html"><img src="{{ app.asset_path }}img/photo-work-7.jpg" alt="Project Name"></a>
+                                </div>
+                                <div class="item-info">
+                                    <h4><a href="works-single-1-full.html">Geometric Shapes</a></h4>
+                                    <p>
+                                        <a href="#">Graphic Design</a>
+                                        <span>,</span>
+                                        <a href="#">Art Direction</a>
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 isotope-item art logo">
+                            <article class="projects-item">
+                                <div class="item-photo">
+                                    <a href="works-single-1-full.html"><img src="{{ app.asset_path }}img/photo-work-8.jpg" alt="Project Name"></a>
+                                </div>
+                                <div class="item-info">
+                                    <h4><a href="works-single-1-full.html">Crazy Strawberry</a></h4>
+                                    <p>
+                                        <a href="#">Art Direction</a>
+                                        <span>,</span>
+                                        <a href="#">Logo Design</a>
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 isotope-item logo corporate">
+                            <article class="projects-item">
+                                <div class="item-photo">
+                                    <a href="works-single-1-full.html"><img src="{{ app.asset_path }}img/photo-work-9.jpg" alt="Project Name"></a>
+                                </div>
+                                <div class="item-info">
+                                    <h4><a href="works-single-1-full.html">Knock Knock Global</a></h4>
+                                    <p>
+                                        <a href="#">Logo Design</a>
+                                        <span>,</span>
+                                        <a href="#">Corporate Identity</a>
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 isotope-item corporate illustration">
+                            <article class="projects-item">
+                                <div class="item-photo">
+                                    <a href="works-single-1-full.html"><img src="{{ app.asset_path }}img/photo-work-10.jpg" alt="Project Name"></a>
+                                </div>
+                                <div class="item-info">
+                                    <h4><a href="works-single-1-full.html">The Old Spartan</a></h4>
+                                    <p>
+                                        <a href="#">Corporate Identity</a>
+                                        <span>,</span>
+                                        <a href="#">Illustration</a>
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 isotope-item illustration graphic">
+                            <article class="projects-item">
+                                <div class="item-photo">
+                                    <a href="works-single-1-full.html"><img src="{{ app.asset_path }}img/photo-work-11.jpg" alt="Project Name"></a>
+                                </div>
+                                <div class="item-info">
+                                    <h4><a href="works-single-1-full.html">Hello Monster</a></h4>
+                                    <p>
+                                        <a href="#">Illustration</a>
+                                        <span>,</span>
+                                        <a href="#">Graphic Design</a>
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 isotope-item illustration graphic">
+                            <article class="projects-item">
+                                <div class="item-photo">
+                                    <a href="works-single-1-full.html"><img src="{{ app.asset_path }}img/photo-work-1.jpg" alt="Project Name"></a>
+                                </div>
+                                <div class="item-info">
+                                    <h4><a href="works-single-1-full.html">Playing With Number</a></h4>
+                                    <p>
+                                        <a href="#">Illustration</a>
+                                        <span>,</span>
+                                        <a href="#">Graphic Design</a>
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projects List End -->
+
+                <!-- Load More -->
+                <div class="widget-load-more">
+                    <a href="#" class="btn btn-radius">
+                        <span class="more-text">LOAD MORE</span>
+                        <span class="more-loader"><img src="{{ app.asset_path }}img/loading-more.gif" alt="Loading"></span>
+                    </a>
+                </div>
+                <!-- Load More End -->
+            </div>
+            <!-- Page Content End -->
+        </article>
+    </main>
+    <!-- Site Main End -->
+{% endblock %}
