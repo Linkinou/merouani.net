@@ -20,3 +20,17 @@ portfolio:
     image: phusion/baseimage
     volumes:
         - ./portfolio:/var/www/html/portfolio/
+    volumes_from:
+        - composer
+        - npm
+    entrypoint: ./portfolio/run.sh
+
+composer:
+    image: composer/composer:alpine
+    volumes:
+        - /usr/local/bin/composer:/usr/local/bin/composer
+
+npm:
+    image: node:4-slim
+    volumes:
+        - /usr/bin/npm:/usr/bin/npm
