@@ -1,0 +1,7 @@
+caddy:
+    ports:
+        - 80:80
+
+portfolio:
+    user: portfolio
+    entrypoint: ./run.sh
