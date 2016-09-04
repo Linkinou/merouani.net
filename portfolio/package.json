@@ -1,4 +1,7 @@
 {
+  "author": "Cédric Merouani",
+  "name": "Portfolio",
+  "version": "0.0.1",
   "dependencies": {
     "auto-reload-brunch": "^2.7.1",
     "clean-css-brunch": "^2.0.0",
