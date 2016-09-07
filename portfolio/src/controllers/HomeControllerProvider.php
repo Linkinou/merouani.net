@@ -13,7 +13,12 @@ class HomeControllerProvider implements ControllerProviderInterface
         $controllers = $app['controllers_factory'];
 
         $controllers->get('/', 'Portfolio\HomeControllerProvider::home');
-        $controllers->get('/{_locale}/', 'Portfolio\HomeControllerProvider::home');
+        $controllers->get('/{_locale}/', 'Portfolio\HomeControllerProvider::home')
+                    ->bind('home');
+
+        $controllers->get('/portfolio', 'Portfolio\HomeControllerProvider::portfolioProject');
+        $controllers->get('/{_locale}/portfolio', 'Portfolio\HomeControllerProvider::portfolioProject')
+                    ->bind('portfolio');
 
         return $controllers;
     }
@@ -25,4 +30,10 @@ class HomeControllerProvider implements ControllerProviderInterface
         return $app['twig']->render('main/index.twig', []);
     }
 
+    public function portfolioProject(Application $app, Request $request)
+    {
+        $app['asset_path'] = $request->getBaseUrl() . '/';
+
+        return $app['twig']->render('main/portfolio.html.twig', []);
+    }
 }

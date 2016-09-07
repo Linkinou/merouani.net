@@ -1,2 +1,24 @@
-hello: Hello
-goodbye: Goodbye
+header:
+    menu:
+        home: Portfolio
+        about: 'About me'
+        contact: Contact
+index:
+    page_title: 'My Works - Cédric Merouani'
+    job_title: Developper
+    job_description: 'Backend mainly, but also frontend and devOps during my free time (should I say fullstack... ?)'
+    filters:
+        all:
+            label: Tout
+            tag: '*'
+        web:
+            label: Web
+            tag: web
+        video_games:
+            label: 'Jeux vidéos'
+            tag: games
+        mobile:
+            label: Mobile
+            tag: mobile
+project1:
+    title: 'This blog'

@@ -11,11 +11,16 @@ exports.config = {
     files: {
         javascripts: {
             joinTo: {
-                'js/app.js': /^src/,
+                'js/app.js': /^src/
             }
         },
         stylesheets: {
-            joinTo: 'css/style.css'
+            joinTo: 'css/style.css',
+            order: {
+                after: [
+                    'src/resources/css/custom.css'
+                ]
+            }
         }
     },
     plugins: {

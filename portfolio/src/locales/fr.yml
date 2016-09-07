@@ -1,2 +1,29 @@
-hello: Bonjour
-goodbye: Aurevoir
+header:
+    menu:
+        home: Portfolio
+        fr: FR
+        en: EN
+        about: 'A propos de moi'
+        contact: 'Contactez-moi'
+
+index:
+    page_title: 'Mon portfolio - Cédric Merouani'
+    job_title: Developpeur
+    job_description: 'Backend principalement, mais aussi frontend et devOps à mes heures perdues (parait qu''il faut dire fullstack...)'
+    filters:
+        all:
+            label: Tout
+            tag: '*'
+        web:
+            label: Web
+            tag: web
+        video_games:
+            label: 'Jeux vidéos'
+            tag: games
+        mobile:
+            label: Mobile
+            tag: mobile
+
+
+project1:
+    title: 'Ce blog'
