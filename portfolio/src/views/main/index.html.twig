@@ -24,7 +24,8 @@
                         <li class="active"><a href="#" data-filter="{{ 'index.filters.all.tag'|trans }}">{{ 'index.filters.all.label'|trans }}</a></li>
                         <li><a href="#" data-filter=".{{ 'index.filters.web.tag'|trans }}">{{ 'index.filters.web.label'|trans }}</a></li>
                         <li><a href="#" data-filter=".{{ 'index.filters.video_games.tag'|trans }}">{{ 'index.filters.video_games.label'|trans }}</a></li>
-                        {#<li><a href="#" data-filter=".art">{{ 'index.filters.mobile'|trans }}</a></li>#}
+                        <li><a href="#" data-filter=".{{ 'index.filters.mobile.tag'|trans }}">{{ 'index.filters.mobile.label'|trans }}</a></li>
+                        <li><a href="#" data-filter=".{{ 'index.filters.devops.tag'|trans }}">{{ 'index.filters.devops.label'|trans }}</a></li>
                     </ul>
                 </div>
                 <!-- Projects Filter End -->
@@ -45,15 +46,17 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 isotope-item {{ 'index.filters.video_games.tag'|trans }}">
+                        <div class="col-md-4 col-sm-6 col-xs-12 isotope-item {{ 'index.filters.web.tag'|trans }} {{ 'index.filters.devops.tag'|trans }}">
                             <article class="projects-item">
                                 <div class="item-photo">
-                                    <a href="works-single-1-full.html"><img src="{{ app.asset_path }}img/photo-work-2.jpg" alt="{{ 'project2.title'|trans }}"></a>
+                                    <a href="{{ path('alfred') }}"><img src="{{ app.asset_path }}img/photo-work-2.jpg" alt="{{ 'project2.title'|trans }}"></a>
                                 </div>
                                 <div class="item-info">
-                                    <h4><a href="works-single-1-full.html">{{ 'project2.title'|trans }}</a></h4>
+                                    <h4><a href="{{ path('alfred') }}">{{ 'project2.title'|trans }}</a></h4>
                                     <p>
-                                        <a href="#">{{ 'index.filters.video_games.label'|trans }}</a>
+                                        <a href="#">{{ 'index.filters.devops.label'|trans }}</a>
+                                        <span>,</span>
+                                        <a href="#">{{ 'index.filters.web.label'|trans }}</a>
                                     </p>
                                 </div>
                             </article>

@@ -22,6 +22,9 @@ index:
         mobile:
             label: Mobile
             tag: mobile
+        devops:
+            label: DevOps
+            tag: devops
 
 project:
     description:
@@ -45,3 +48,11 @@ project1:
             <p><b>Brunch</b> is a tool I use to compile/optimize assets (a gulp-like). Never tried before, but nothing difficult here.</p>
             <p>Everything is <b>Docker</b>ized to be able to deploy every change easily on my server.<br>I can manage a dev environment and a production one simply by playing with docker-compose.yml.</p>
             <p>With the help of Docker, docker-compose and Caddy it's now easy for my to add a new project with a new domain on my server beside this portfolio.</p>
+project2:
+    title: 'Alfred'
+    description:
+        content: >
+            <p><b>Alfred</b> is a pre-configured <b>docker based</b> applications bundle for Continuous Integration and Deployment. The purpose of Alfred is to build and test projects on DigitalOcean droplets on-the-go.</p>
+            <p>There are a few components under that name : <b>Jenkins</b>, <b>Samson</b> or <b>Spawner</b> a handmade php application</p>
+            <p>The idea is to be able to test every pull request submitted before merging the changes on the master branch (PHPUnit, ESLINT, PHPCS, Behat, Nightwatch…).</p>
+            <p>Then Samson interface would be used to deploy a specific branch for according to the purpose (recette, preprod or production).</p>

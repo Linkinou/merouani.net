@@ -23,7 +23,9 @@ index:
         mobile:
             label: Mobile
             tag: mobile
-
+        devops:
+            label: DevOps
+            tag: devops
 project:
     description:
         label: Description
@@ -46,3 +48,11 @@ project1:
             <p>Je voulais tester le serveur <b>Caddy</b> au lieu d’utiliser Nginx. Caddy est un serveur qui se présente sous la forme d’un binaire à lancer et accompagné d’un fichier de conf très simple à prendre en main.</p>
             <p><b>Brunch</b> est l’outil qui me permet de compiler/optimiser mes assets (comme gulp). Premier essai avec cet outil, il semble parfaitement convenir au besoin d’un blog/portfolio pour sa facilité d’utilisation.</p>
             <p>Tout est dockerisé, ce qui me permet de déployer chaque changement très simplement sur mon serveur. Et <b>Docker Compose</b> me permet de gérer facilement les différents environnements dev/prod.</p>
+project2:
+    title: 'Alfred'
+    description:
+        content: >
+            <p><b>Alfred</b> est un set d’applications basé sur <b>Docker</b> qui permet de faire de l'intégration et du déploiement continu. L’objectif d’Alfred est de monter et tester des projets en utilisant des serveurs DigitalOcean à la demande.</p>
+            <p>On peut retenir certains composants présents dans Alfred : <b>Jenkins</b>, <b>Samson</b> ou encore <b>Spawner</b> qui est une application PHP.</p>
+            <p>L’idée est de pouvoir tester chaque pull request d’un repository Git avant de pouvoir merger les modifications sur la branche master (PHPUnit, ESLINT, PHPCS, Behat, Nightwatch…).</p>
+            <p>Et <b>Samson</b> offrait une interface pratique pour le staging en déployant une branche spécifique sur un environnement précis (recette, preprod ou production).</p>
