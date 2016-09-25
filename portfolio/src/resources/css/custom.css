@@ -3,3 +3,7 @@ body {
     background-color: #151515;
     color: #151515;
 }
+
+.widget-nav-social ul li a {
+    color: #fff;
+}

@@ -29,10 +29,14 @@ index:
 project:
     description:
         label: Description
+    team:
+        label: Taille de l'équipe
+    date:
+        label: Année
     category:
         label: Categorie
     links:
-        label: Liens
+        label: Technos
     navigation:
         previous:
             label: PRECEDENT
@@ -56,3 +60,11 @@ project2:
             <p>On peut retenir certains composants présents dans Alfred : <b>Jenkins</b>, <b>Samson</b> ou encore <b>Spawner</b> qui est une application PHP.</p>
             <p>L’idée est de pouvoir tester chaque pull request d’un repository Git avant de pouvoir merger les modifications sur la branche master (PHPUnit, ESLINT, PHPCS, Behat, Nightwatch…).</p>
             <p>Et <b>Samson</b> offrait une interface pratique pour le staging en déployant une branche spécifique sur un environnement précis (recette, preprod ou production).</p>
+project3:
+    title: 'Softdev'
+    description:
+        content: >
+            <p>Lorsque nous travaillions deux de mes amis et moi-même sur Softdev, nous voulions offrir une manière simple aux PMEs d'avoir et de gérer de petits sites internet à travers Facebook.</p>
+            <p>L'idée était de leur créer un site vitrine qui utiliserait leur page Facebook Pro en tant que contenu. C'était une manière de leur offrir de la visibilité et une page personnelle à un coût moindre.</p>
+            <p>Techniquement nous communiquions avec l'API de Facebook pour mettre en cache toutes les informations nécessaires côté client nous avions un site suffisamment granulaire et dynamique pour gérer les différents types de contenus : articles, photos et albums, vidéos, les statuts...</p>
+            <p>Le site était divisé en différents block (merci Twig) et le client avait la possibilité de choisir si tel ou tel block devait être activé ou non sur son site.</p>

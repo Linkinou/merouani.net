@@ -7,7 +7,7 @@ use Silex\Provider\LocaleServiceProvider;
 use Silex\Provider\TwigServiceProvider;
 use Silex\Provider\TranslationServiceProvider;
 
-const DEFAULT_LOCALE = 'en';
+const DEFAULT_LOCALE = 'fr';
 
 $app = new Silex\Application();
 /** Libs registration */
@@ -29,9 +29,7 @@ $app->extend('translator', function(Translator $translator, $app) {
 });
 
 /** Definitions */
-$app['debug'] = true;
+$app['debug'] = false;
 $app['locale'] = DEFAULT_LOCALE;
 
 $app->mount('/', new \Portfolio\HomeControllerProvider());
-
-/** Routes */

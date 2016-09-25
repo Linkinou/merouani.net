@@ -17,7 +17,7 @@ index:
             label: Web
             tag: web
         video_games:
-            label: 'Jeux vidéos'
+            label: 'Video games '
             tag: games
         mobile:
             label: Mobile
@@ -29,15 +29,21 @@ index:
 project:
     description:
         label: Description
+    team:
+        label: Team size
+    date:
+        label: Year
     category:
         label: Category
     links:
-        label: Links
+        label: Tech
     navigation:
         previous:
             label: PREVIOUS
         next:
             label: NEXT
+contact:
+    title: 'Contact'
 project1:
     title: 'This blog'
     description:
@@ -56,3 +62,11 @@ project2:
             <p>There are a few components under that name : <b>Jenkins</b>, <b>Samson</b> or <b>Spawner</b> a handmade php application</p>
             <p>The idea is to be able to test every pull request submitted before merging the changes on the master branch (PHPUnit, ESLINT, PHPCS, Behat, Nightwatch…).</p>
             <p>Then Samson interface would be used to deploy a specific branch for according to the purpose (recette, preprod or production).</p>
+project3:
+    title: 'Softdev'
+    description:
+        content: >
+            <p>When I was working on Softdev with two of my friends, we wanted to give the easiest way for small businesses to get and manage small websites through Facebook.</p>
+            <p>The idea was to create a showcase site for them based on their professional facebook page. It was a good way to give them more visibility and a personal page with a low cost.</p>
+            <p>We had to communicate with the Facebook API and have a website dynamically enough to handle every type of medias : articles, photos and albums, videos, news feed…</p>
+            <p>The website was split into different blocks (thanks to twig) and the owner had an admin page to choose which blocks he wanted to activate.</p>

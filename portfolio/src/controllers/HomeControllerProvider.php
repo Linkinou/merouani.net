@@ -11,6 +11,8 @@ class HomeControllerProvider implements ControllerProviderInterface
     const   ROUTE_HOME = 'home';
     const   ROUTE_PORTFOLIO = 'portfolio';
     const   ROUTE_ALFRED = 'alfred';
+    const   ROUTE_SOFTDEV_WEB = 'softdevWeb';
+    const   ROUTE_CONTACT = 'contact';
 
     public function connect(Application $app)
     {
@@ -26,7 +28,15 @@ class HomeControllerProvider implements ControllerProviderInterface
 
         $controllers->get('/alfred', 'Portfolio\HomeControllerProvider::alfredProject');
         $controllers->get('/{_locale}/alfred', 'Portfolio\HomeControllerProvider::alfredProject')
-            ->bind(self::ROUTE_ALFRED);
+                    ->bind(self::ROUTE_ALFRED);
+
+        $controllers->get('/softdev-web', 'Portfolio\HomeControllerProvider::softdevWebProject');
+        $controllers->get('/{_locale}/softdev-web', 'Portfolio\HomeControllerProvider::softdevWebProject')
+                    ->bind(self::ROUTE_SOFTDEV_WEB);
+
+//        $controllers->get('/contact', 'Portfolio\HomeControllerProvider::contactProject');
+//        $controllers->get('/{_locale}/contact', 'Portfolio\HomeControllerProvider::contactProject')
+//                    ->bind(self::ROUTE_CONTACT);
 
         return $controllers;
     }
@@ -44,7 +54,7 @@ class HomeControllerProvider implements ControllerProviderInterface
         $app['asset_path'] = $request->getBaseUrl() . '/';
         $app['current_route'] = self::ROUTE_PORTFOLIO;
 
-        return $app['twig']->render('main/portfolio.html.twig', []);
+        return $app['twig']->render('main/projects/portfolio.html.twig', []);
     }
 
     public function alfredProject(Application $app, Request $request)
@@ -52,6 +62,23 @@ class HomeControllerProvider implements ControllerProviderInterface
         $app['asset_path'] = $request->getBaseUrl() . '/';
         $app['current_route'] = self::ROUTE_ALFRED;
 
-        return $app['twig']->render('main/alfred.html.twig', []);
+        return $app['twig']->render('main/projects/alfred.html.twig', []);
     }
+
+    public function softdevWebProject(Application $app, Request $request)
+    {
+        $app['asset_path'] = $request->getBaseUrl() . '/';
+        $app['current_route'] = self::ROUTE_SOFTDEV_WEB;
+
+        return $app['twig']->render('main/projects/softdev-web.html.twig', []);
+    }
+
+//    public function contactProject(Application $app, Request $request)
+//    {
+//        $app['asset_path'] = $request->getBaseUrl() . '/';
+//        $app['current_route'] = self::ROUTE_CONTACT;
+//
+//        return $app['twig']->render('main/contact.html.twig', []);
+//    }
+
 }
