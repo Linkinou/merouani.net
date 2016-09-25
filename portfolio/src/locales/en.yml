@@ -1,6 +1,8 @@
 header:
     menu:
         home: Portfolio
+        fr: FR
+        en: EN
         about: 'About me'
         contact: Contact
 index:
@@ -20,5 +22,26 @@ index:
         mobile:
             label: Mobile
             tag: mobile
+
+project:
+    description:
+        label: Description
+    category:
+        label: Category
+    links:
+        label: Links
+    navigation:
+        previous:
+            label: PREVIOUS
+        next:
+            label: NEXT
 project1:
     title: 'This blog'
+    description:
+        content: >
+            <p>I wanted to take this opportunity of making my portfolio to use some tools. Some of them are familiar to me like <b>Docker</b> and others are new like <b>Brunch</b>.</p>
+            <p>This portfolio is using <b>Silex</b> as a micro-PHP framework. It's useful for small project because I can handle every component I need instead of implementing directly something bigger like Symfony2.</p>
+            <p>I wanted to give a try to <b>Caddy</b> server instead of using Nginx. It's a single file server binary with a conf file. Very easy to use and straightforward, perfect for small projects.</p>
+            <p><b>Brunch</b> is a tool I use to compile/optimize assets (a gulp-like). Never tried before, but nothing difficult here.</p>
+            <p>Everything is <b>Docker</b>ized to be able to deploy every change easily on my server.<br>I can manage a dev environment and a production one simply by playing with docker-compose.yml.</p>
+            <p>With the help of Docker, docker-compose and Caddy it's now easy for my to add a new project with a new domain on my server beside this portfolio.</p>

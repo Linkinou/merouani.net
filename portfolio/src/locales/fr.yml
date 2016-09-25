@@ -24,6 +24,25 @@ index:
             label: Mobile
             tag: mobile
 
+project:
+    description:
+        label: Description
+    category:
+        label: Categorie
+    links:
+        label: Liens
+    navigation:
+        previous:
+            label: PRECEDENT
+        next:
+            label: SUIVANT
 
 project1:
     title: 'Ce blog'
+    description:
+        content: >
+            <p>Je voulais profiter de l’occasion de refaire mon portfolio pour mettre en commun certains outils. Certains que je connaissais déjà tel que <b>Docker</b> ou encore d’autre dont j’ai juste entendu parler comme <b>Brunch</b>.</p>
+            <p>Ce portfolio utilise <b>Silex</b> comme micro-framework PHP. Utile pour de petits projets parce qu’il permet d’intégrer des composants <b>Symfony2</b> à la demande.</p>
+            <p>Je voulais tester le serveur <b>Caddy</b> au lieu d’utiliser Nginx. Caddy est un serveur qui se présente sous la forme d’un binaire à lancer et accompagné d’un fichier de conf très simple à prendre en main.</p>
+            <p><b>Brunch</b> est l’outil qui me permet de compiler/optimiser mes assets (comme gulp). Premier essai avec cet outil, il semble parfaitement convenir au besoin d’un blog/portfolio pour sa facilité d’utilisation.</p>
+            <p>Tout est dockerisé, ce qui me permet de déployer chaque changement très simplement sur mon serveur. Et <b>Docker Compose</b> me permet de gérer facilement les différents environnements dev/prod.</p>

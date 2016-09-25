@@ -11,6 +11,6 @@ http://merouani.net http://cedric.merouani.net :8042 {
     }
     fastcgi / phpfpm:9000 php
     rewrite {
-        to {path} {path}/ /index.php?url={uri}
+        to {path} {path}/ /index.php
     }
 }

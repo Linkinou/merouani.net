@@ -21,15 +21,14 @@
                 <div class="widget-flex">
                     <!-- Header Logo -->
                     <div class="header-logo">
-                        <a href="/">{{ 'header.menu.home'|trans }}</a>
+                        <a href="{{ path('home') }}">{{ 'header.menu.home'|trans }}</a>
                     </div>
                     <!-- Header Logo End -->
-                    {{ app.request.basepath }}
                     <!-- Header Nav -->
                     <nav class="header-nav">
                         <ul>
-                            <li><a href="">{{ 'header.menu.en'|trans }}</a></li>
-                            <li><a href="/fr">{{ 'header.menu.fr'|trans }}</a></li>
+                            <li><a href="{{ path(app.current_route, {_locale: 'en'}) }}">{{ 'header.menu.en'|trans }}</a></li>
+                            <li><a href="{{ path(app.current_route, {_locale: 'fr'}) }}">{{ 'header.menu.fr'|trans }}</a></li>
                             <li><a href="contact.html">{{ 'header.menu.contact'|trans }}</a></li>
                         </ul>
                     </nav>
