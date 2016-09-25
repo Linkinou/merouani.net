@@ -1,0 +1,94 @@
+{% extends 'base.twig' %}
+
+{% block title %}{{ 'index.page_title'|trans }}{% endblock %}
+
+{% block body %}
+    <!-- Site Main -->
+    <main class="site-main">
+        <article>
+            <!-- Page Header -->
+            <header class="page-header">
+                <div class="wrapper">
+                    <h1>Cédric Merouani</h1>
+                    <h2>{{ 'index.job_title'|trans }}</h2>
+                    <p>{{ 'index.job_description'|trans }}</p>
+                </div>
+            </header>
+            <!-- Page Header End -->
+
+            <!-- Page Content -->
+            <div class="wrapper">
+                <!-- Projects Filter -->
+                <div class="widget-filter-top o-masonry">
+                    <ul>
+                        <li class="active"><a href="#" data-filter="{{ 'index.filters.all.tag'|trans }}">{{ 'index.filters.all.label'|trans }}</a></li>
+                        <li><a href="#" data-filter=".{{ 'index.filters.web.tag'|trans }}">{{ 'index.filters.web.label'|trans }}</a></li>
+                        <li><a href="#" data-filter=".{{ 'index.filters.video_games.tag'|trans }}">{{ 'index.filters.video_games.label'|trans }}</a></li>
+                        <li><a href="#" data-filter=".{{ 'index.filters.mobile.tag'|trans }}">{{ 'index.filters.mobile.label'|trans }}</a></li>
+                        <li><a href="#" data-filter=".{{ 'index.filters.devops.tag'|trans }}">{{ 'index.filters.devops.label'|trans }}</a></li>
+                    </ul>
+                </div>
+                <!-- Projects Filter End -->
+
+                <!-- Projects List -->
+                <div class="widget-projects o-grid">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-12 isotope-item {{ 'index.filters.web.tag'|trans }}">
+                            <article class="projects-item">
+                                <div class="item-photo">
+                                    <a href="{{ path('portfolio') }}"><img src="{{ app.asset_path }}img/portfolio.png" alt="{{ 'project1.title'|trans }}"></a>
+                                </div>
+                                <div class="item-info">
+                                    <h4><a href="{{ path('portfolio') }}">{{ 'project1.title'|trans }}</a></h4>
+                                    <p>
+                                        <a href="#">{{ 'index.filters.web.label'|trans }}</a>
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 isotope-item {{ 'index.filters.web.tag'|trans }} {{ 'index.filters.devops.tag'|trans }}">
+                            <article class="projects-item">
+                                <div class="item-photo">
+                                    <a href="{{ path('alfred') }}"><img src="{{ app.asset_path }}img/alfred.png" alt="{{ 'project2.title'|trans }}"></a>
+                                </div>
+                                <div class="item-info">
+                                    <h4><a href="{{ path('alfred') }}">{{ 'project2.title'|trans }}</a></h4>
+                                    <p>
+                                        <a href="#">{{ 'index.filters.devops.label'|trans }}</a>
+                                        <span>,</span>
+                                        <a href="#">{{ 'index.filters.web.label'|trans }}</a>
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 isotope-item {{ 'index.filters.web.tag'|trans }}">
+                            <article class="projects-item">
+                                <div class="item-photo">
+                                    <a href="{{ path('softdevWeb') }}"><img src="{{ app.asset_path }}img/softdev.png" alt="{{ 'project3.title'|trans }}"></a>
+                                </div>
+                                <div class="item-info">
+                                    <h4><a href="{{ path('softdevWeb') }}">{{ 'project3.title'|trans }}</a></h4>
+                                    <p>
+                                        <a href="#">{{ 'index.filters.web.label'|trans }}</a>
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projects List End -->
+
+                {#<!-- Load More -->#}
+                {#<div class="widget-load-more">#}
+                    {#<a href="#" class="btn btn-radius">#}
+                        {#<span class="more-text">LOAD MORE</span>#}
+                        {#<span class="more-loader"><img src="{{ app.asset_path }}img/loading-more.gif" alt="Loading"></span>#}
+                    {#</a>#}
+                {#</div>#}
+                {#<!-- Load More End -->#}
+            </div>
+            <!-- Page Content End -->
+        </article>
+    </main>
+    <!-- Site Main End -->
+{% endblock %}
