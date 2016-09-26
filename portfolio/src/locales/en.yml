@@ -37,6 +37,8 @@ project:
         label: Category
     links:
         label: Tech
+    sources:
+        label: Sources
     navigation:
         previous:
             label: PREVIOUS
@@ -70,3 +72,10 @@ project3:
             <p>The idea was to create a showcase site for them based on their professional facebook page. It was a good way to give them more visibility and a personal page with a low cost.</p>
             <p>We had to communicate with the Facebook API and have a website dynamically enough to handle every type of medias : articles, photos and albums, videos, news feed…</p>
             <p>The website was split into different blocks (thanks to twig) and the owner had an admin page to choose which blocks he wanted to activate.</p>
+project4:
+    title: 'Wildcat Attack'
+    description:
+        content: >
+            <p>Wildcat Attack is a video game made with Unity3D and 3DS Max. The assets are in 3D but it’s a 2D physics game.</p>
+            <p>The purpose of the game is to make 2 opponents fight each other by pushing the enemy outside the platform.</p>
+            <p>This game has been made during my school year in South Korea.</p>
