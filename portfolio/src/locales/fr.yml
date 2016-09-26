@@ -37,6 +37,8 @@ project:
         label: Categorie
     links:
         label: Technos
+    sources:
+        label: Sources
     navigation:
         previous:
             label: PRECEDENT
@@ -68,3 +70,10 @@ project3:
             <p>L'idée était de leur créer un site vitrine qui utiliserait leur page Facebook Pro en tant que contenu. C'était une manière de leur offrir de la visibilité et une page personnelle à un coût moindre.</p>
             <p>Techniquement nous communiquions avec l'API de Facebook pour mettre en cache toutes les informations nécessaires côté client nous avions un site suffisamment granulaire et dynamique pour gérer les différents types de contenus : articles, photos et albums, vidéos, les statuts...</p>
             <p>Le site était divisé en différents block (merci Twig) et le client avait la possibilité de choisir si tel ou tel block devait être activé ou non sur son site.</p>
+project4:
+    title: 'Wildcat Attack'
+    description:
+        content: >
+            <p>Wildcat Attack est un jeu vidéo fait avec Unity3D et 3DS Max. Les assets sont en 3D mais le gameplay repose sur une physique 2D.</p>
+            <p>Le but du jeu est de d’affronter un adversaire en 1v1 en le poussant en dehors de la plateforme.</p>
+            <p>Le jeu a été développé durant mon année scolaire en Corée du Sud.</p>
