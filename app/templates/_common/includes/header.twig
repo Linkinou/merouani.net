@@ -1,0 +1,45 @@
+
+<!-- Site Loading -->
+<div class="site-loading">
+    <img src="{{ asset('build/images/loading.gif') }}" alt="Loading">
+</div>
+<!-- Site Loading End -->
+
+<!-- Site Back Top -->
+<div class="site-backtop">
+    <i class="fa fa-angle-up"></i>
+</div>
+<!-- Site Back Top End -->
+
+<!-- Site Container -->
+<div class="site-wrapper">
+    <!-- Site Inner -->
+    <div class="site-inner">
+        <!-- Site Header -->
+        <header class="site-header">
+            <div class="wrapper">
+                <div class="widget-flex">
+                    <!-- Header Logo -->
+                    <div class="header-logo">
+                        <a href="{{ path('homepage') }}">{{ 'header.menu.home'|trans }}</a>
+                    </div>
+                    <!-- Header Logo End -->
+                    <!-- Header Nav -->
+                    <nav class="header-nav">
+                        <ul>
+                            <li><a href="{{ path(app.request.attributes.get('_route'), {_locale: 'en'}) }}">{{ 'header.menu.en'|trans }}</a></li>
+                            <li><a href="{{ path(app.request.attributes.get('_route'), {_locale: 'fr'}) }}">{{ 'header.menu.fr'|trans }}</a></li>
+                            {#<li><a href="{{ path('contact') }}">{{ 'header.menu.contact'|trans }}</a></li>#}
+                        </ul>
+                    </nav>
+                    <!-- Header Nav End -->
+
+                    <!-- Header Toggle -->
+                    <div class="header-toggle">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                    <!-- Header Toggle End -->
+                </div>
+            </div>
+        </header>
+        <!-- Site Header End -->

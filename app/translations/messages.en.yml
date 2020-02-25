@@ -1,0 +1,81 @@
+header:
+    menu:
+        home: Portfolio
+        fr: FR
+        en: EN
+        about: 'About me'
+        contact: Contact
+index:
+    page_title: 'My Works - Cédric Merouani'
+    job_title: FullStack Developper
+    job_description: 'Backend mainly, but also frontend and devOps during my free time'
+    filters:
+        all:
+            label: Tout
+            tag: '*'
+        web:
+            label: Web
+            tag: web
+        video_games:
+            label: 'Video games '
+            tag: games
+        mobile:
+            label: Mobile
+            tag: mobile
+        devops:
+            label: DevOps
+            tag: devops
+
+project:
+    description:
+        label: Description
+    team:
+        label: Team size
+    date:
+        label: Year
+    category:
+        label: Category
+    links:
+        label: Tech
+    sources:
+        label: Sources
+    navigation:
+        previous:
+            label: PREVIOUS
+        next:
+            label: NEXT
+contact:
+    title: 'Contact'
+project1:
+    title: 'This blog'
+    description:
+        content: >
+            <p>I wanted to take this opportunity of making my portfolio to use some tools. Some of them are familiar to me like <b>Docker</b> and others are new like <b>Brunch</b>.</p>
+            <p>This portfolio is using <b>Silex</b> as a micro-PHP framework. It's useful for small project because I can handle every component I need instead of implementing directly something bigger like Symfony2.</p>
+            <p>I wanted to give a try to <b>Caddy</b> server instead of using Nginx. It's a single file server binary with a conf file. Very easy to use and straightforward, perfect for small projects.</p>
+            <p><b>Brunch</b> is a tool I use to compile/optimize assets (a gulp-like). Never tried before, but nothing difficult here.</p>
+            <p>Everything is <b>Docker</b>ized to be able to deploy every change easily on my server.<br>I can manage a dev environment and a production one simply by playing with docker-compose.yml.</p>
+            <p>With the help of Docker, docker-compose and Caddy it's now easy for my to add a new project with a new domain on my server beside this portfolio.</p>
+project2:
+    title: 'Alfred'
+    description:
+        content: >
+            <p><b>Alfred</b> is a pre-configured <b>docker based</b> applications bundle for Continuous Integration and Deployment. The purpose of Alfred is to build and test projects on DigitalOcean droplets on-the-go.</p>
+            <p>There are a few components under that name : <b>Jenkins</b>, <b>Samson</b> or <b>Spawner</b> a handmade php application</p>
+            <p>The idea is to be able to test every pull request submitted before merging the changes on the master branch (PHPUnit, ESLINT, PHPCS, Behat, Nightwatch…).</p>
+            <p>Then Samson interface would be used to deploy a specific branch for according to the purpose (recette, preprod or production).</p>
+project3:
+    title: 'Softdev'
+    description:
+        content: >
+            <p>When I was working on Softdev with two of my friends, we wanted to give the easiest way for small businesses to get and manage small websites through Facebook.</p>
+            <p>The idea was to create a showcase site for them based on their professional facebook page. It was a good way to give them more visibility and a personal page at low cost.</p>
+            <p>We had to communicate with the Facebook API and have a website dynamically enough to handle every type of medias : articles, photos and albums, videos, news feed…</p>
+            <p>The website was split into different blocks (thanks to twig) and the owner had an admin page to choose which blocks he wanted to activate.</p>
+project4:
+    title: 'Wildcat Attack'
+    description:
+        content: >
+            <p>Wildcat Attack is a video game made with Unity3D and 3DS Max. The assets are 3D models but 2D physics is used for the gameplay.</p>
+            <p>The purpose of the game is to make 2 opponents fight each other by pushing the enemy outside the platform.</p>
+            <p>This game has been made during my school year in South Korea.</p>
