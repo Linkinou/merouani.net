@@ -47,7 +47,7 @@ project:
 contact:
     title: 'Contact'
 project1:
-    title: 'This blog'
+    title: 'This portfolio'
     description:
         content: >
             <p>I wanted to take this opportunity of making my portfolio to use some tools. Some of them are familiar to me like <b>Docker</b> and others are new like <b>Brunch</b>.</p>
@@ -79,3 +79,27 @@ project4:
             <p>Wildcat Attack is a video game made with Unity3D and 3DS Max. The assets are 3D models but 2D physics is used for the gameplay.</p>
             <p>The purpose of the game is to make 2 opponents fight each other by pushing the enemy outside the platform.</p>
             <p>This game has been made during my school year in South Korea.</p>
+
+project5:
+    title: 'Ouimiam.com'
+    description:
+        content: >
+            <p>Whenever I have to do something multiple times, there's always a voice in my head trying to optimize everything and remove the repeatitivenss of a task.</p>
+            <p>Ouimiam is a family project helping me to make a shopping list just by selecting the recipes I want to cook during the week. The goal was to remove the manual calculation of ingredients everytime we wanted to make provisions.</p>
+            <p>To be honest, the project is basically working but could be improved by a lot, the website is just a prototype.</p>
+            <p>I'm still happy about it because I have a list of recipes I like and it generates the shopping list accordingly.</p>
+            <p>But there's room for improvement, like being more precise about the quantity of each ingredient. And the UX is quite bad in my opinion.</p>
+            <p>On the technical side, the project is running with Api Platform but ironically, I'm not using the API at all. That's because my plan was to make a mobile app at some point, maybe later ?</p>
+            <p>http://ouimiam.com</p>
+
+project6:
+    title: 'Role Playing Game Platform'
+    description:
+        content: >
+            <p>I always loved role playing games and heroic fantasy theme.</p>
+            <p>This project is what got me into programming. I started in high school making forums using PHPBB and creating a background universe and having people join me by building their character and writing stories.</p>
+            <p>That era was fun but I never tried to do that again because of a lack of time.</p>
+            <p>The more I was improving my skills in programming, the more I had new ideas regarding my old forums. So I started to create a role playing game platform from scratch using Symfony and Twig.</p>
+            <p>The idea is to create a platform where people can create their characters and write stories using advanced features based on Dungeons & Dragons gameplay.</p>
+            <p>It's like writing "You are the hero" book but with friends and using video games concepts (experience, money, inventories...)</p>
+            <p>This project is still a work in progress, </p>

@@ -46,7 +46,7 @@ project:
             label: SUIVANT
 
 project1:
-    title: 'Ce blog'
+    title: 'Ce portfolio'
     description:
         content: >
             <p>Je voulais profiter de l’occasion de refaire mon portfolio pour mettre en commun certains outils. Certains que je connaissais déjà tel que <b>Docker</b> ou encore d’autre dont j’ai juste entendu parler comme <b>Brunch</b>.</p>
@@ -55,7 +55,7 @@ project1:
             <p><b>Brunch</b> est l’outil qui me permet de compiler/optimiser mes assets (comme gulp). Premier essai avec cet outil, il semble parfaitement convenir au besoin d’un blog/portfolio pour sa facilité d’utilisation.</p>
             <p>Tout est dockerisé, ce qui me permet de déployer chaque changement très simplement sur mon serveur. Et <b>Docker Compose</b> me permet de gérer facilement les différents environnements dev/prod.</p>
             <p><b>[UPDATE 2020]</b></p>
-            <p>Silex/Caddy/Brunch c'est terminé, nous sommes maintenant sur une base Symfony5/NginX/Webpack-Encore pour ce blog.</p>
+            <p>Silex/Caddy/Brunch c'est terminé, nous sommes maintenant sur une base Symfony5/NginX/Webpack-Encore pour ce portfolio.</p>
 project2:
     title: 'Alfred'
     description:
@@ -79,3 +79,25 @@ project4:
             <p>Wildcat Attack est un jeu vidéo fait avec Unity3D et 3DS Max. Les assets sont en 3D mais le gameplay repose sur une physique 2D.</p>
             <p>Le but du jeu est de d’affronter un adversaire en 1v1 en le poussant en dehors de la plateforme.</p>
             <p>Le jeu a été développé durant mon année scolaire en Corée du Sud.</p>
+project5:
+    title: 'Ouimiam.com'
+    description:
+        content: >
+            <p>Dès que j'ai à faire une tâche de manière récurrente, il y a toujours une voix dans ma tête pour m'inciter à réduire les répétitions et être optimisé.</p>
+            <p>Ouimiam.com est un projet familial qui a pour but de générer une liste de course à partir d'un choix de recettes.</p>
+            <p>Pour être honnête, le projet fonctionne très basiquement et il y a pas mal d'améliorations possibles, on peut considérer le site comme un prototype.</p>
+            <p>J'en suis un minimum satisfait car il me permet tout de même de rendre la tâche de préparation de courses moins fastidieuse.</p>
+            <p>Les améliorations possibles sont nombreuses, notamment apporter plus de précisions dans la gestion des quantités. Et l'UX est à revoir également</p>
+            <p>D'un point de vue technique, le projet fonctionne avec Api Platform mais ironiquement, je n'utilise pas du tout l'API. Il y a avait une volonté de développer une application mobile à la base, mais par manque de temps, je n'ai pas encore eu l'occasion de m'y mettre.</p>
+            <p>http://ouimiam.com</p>
+project6:
+    title: 'Plateforme de jeu de rôle'
+    description:
+        content: >
+            <p>J'ai toujours apprécié les jeux de rôle and l'univers de l'heroic fantasy.</p>
+            <p>C'est par ce projet que j'ai débuté la programmation. J'ai commencé au collège, à créer des forums grâce à PHPBB et à écrire le lore d'univers sur lequel des gens venaient se greffer en créant leur propre personnages et leur propre histoire.</p>
+            <p>Je garde de bons souvenirs de cette époque sans avoir l'occasion de retenter l'experience</p>
+            <p>Et pourtant, plus je m'améliorais en tant que developpeur, plus j'avais d'idées pour enrichir ce que j'avais autrefois créer. J'ai donc commencé à développer un nouveau projet de zéro en utilisant Symfony et Twig</p>
+            <p>L'idée était de créer une plateforme de jeu de role où les gens pouvaient créer leur personnages et écrire leur histoire en commun en utilisant des outils de gamification basés sur les méchanique de Donjons et Dragons</p>
+            <p>C'est comme écrire un livre "dont vous êtes le héro" mais avec vos amis et en utilisant des concepts du jeu vidéo (experience, inventaire, système monetaire...).</p>
+            <p>Ce projet est toujours en cours de developpement...</p>

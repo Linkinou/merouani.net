@@ -1,6 +1,6 @@
 {% extends 'base.twig' %}
 
-{% block title %}{{ 'project4.title'|trans }}{% endblock %}
+{% block title %}{{ 'project5.title'|trans }}{% endblock %}
 
 {% block body %}
     <!-- Site Main -->
@@ -9,7 +9,7 @@
             <!-- Page Header -->
             <header class="page-header">
                 <div class="wrapper">
-                    <h1>{{ 'project4.title'|trans }}</h1>
+                    <h1>{{ 'project5.title'|trans }}</h1>
                 </div>
             </header>
             <!-- Page Header End -->
@@ -21,14 +21,14 @@
                     <div class="widget-flex">
                         <div class="flex-item">
                             <h2>{{ 'project.description.label'|trans }}</h2>
-                            {{ 'project4.description.content'|trans|raw }}
+                            {{ 'project5.description.content'|trans|raw }}
                         </div>
                         <div class="flex-item">
                             <div class="widget-flex">
                                 <div class="flex-item">
                                     <h2>{{ 'project.links.label'|trans }}</h2>
-                                    <a href="https://unity3d.com/" target="_blank">Unity3D / C#</a><br>
-                                    <a href="http://www.autodesk.fr/products/3ds-max/overview" target="_blank">3DS Max</a><br><br>
+                                    <a href="https://api-platform.com/">Api Platform</a><br>
+                                    <a href="http://twig.sensiolabs.org/">Twig</a><br>
                                 </div>
                                 <div class="flex-item">
                                     <h2>{{ 'project.category.label'|trans }}</h2>
@@ -38,11 +38,11 @@
                                 </div>
                                 <div class="flex-item">
                                     <h2>{{ 'project.date.label'|trans }}</h2>
-                                    <p>2014</p>
+                                    <p>2017</p>
                                 </div>
                                 <div class="flex-item">
-                                    <h2>{{ 'project.sources.label'|trans }}</h2>
-                                    <p><a href="https://github.com/poksme/WildCatAttack" target="_blank">Github</a></p>
+                                    <h2>{{ 'project.team.label'|trans }}</h2>
+                                    <p>1</p>
                                 </div>
                             </div>
                         </div>
@@ -55,15 +55,18 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="gallery-item">
-                                <iframe width="1280" height="720" src="https://www.youtube.com/embed/3UGl3jz1KzI?rel=0" frameborder="0" allowfullscreen></iframe>
+                                <a href="{{ asset('build/images/ouimiam1.jpg') }}" title="{{ 'project5.title'|trans }}" class="popup-gallery">
+                                    <img src="{{ asset('build/images/ouimiam1.jpg') }}" alt="{{ 'project5.title'|trans }}">
+                                </a>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
                             <div class="gallery-item">
-                                <a href="img/wildcat.jpg" title="{{ 'project4.title'|trans }}" class="popup-gallery">
-                                    <img src="{{ asset('build/images/wildcat.jpg') }}" alt="{{ 'project4.title'|trans }}">
+                                <a href="{{ asset('build/images/ouimiam3.jpg') }}" title="{{ 'project5.title'|trans }}" class="popup-gallery">
+                                    <img src="{{ asset('build/images/ouimiam3.jpg') }}" alt="{{ 'project5.title'|trans }}">
+                                </a>
+                            </div>
+                            <div class="gallery-item">
+                                <a href="{{ asset('build/images/ouimiam4.jpg') }}" title="{{ 'project5.title'|trans }}" class="popup-gallery">
+                                    <img src="{{ asset('build/images/ouimiam4.jpg') }}" alt="{{ 'project5.title'|trans }}">
                                 </a>
                             </div>
                         </div>
@@ -76,14 +79,10 @@
                     <ul>
                         <li class="prev">
                             <span>{{ 'project.navigation.previous.label'|trans }}</span>
-                            <a href="{{ path('softdevWeb') }}">{{ 'project3.title'|trans }}</a>
+                            <a href="{{ path('wildcat') }}">{{ 'project4.title'|trans }}</a>
                         </li>
                         <li class="all">
                             <a href="{{ path('homepage') }}"><i class="fa fa-bars" aria-hidden="true"></i></a>
-                        </li>
-                        <li class="next">
-                            <span>{{ 'project.navigation.next.label'|trans }}</span>
-                            <a href="{{ path('ouimiam') }}">{{ 'project5.title'|trans }}</a>
                         </li>
                     </ul>
                 </nav>
